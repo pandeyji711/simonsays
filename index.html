@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="pn51reWhv4IBocm7Wb9qjWAUEbB4RRZbf4Elfhv014w" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simon says game</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body style="background-color: rgb(189, 200, 210);">
+     <div id="popup-container" class="popup-container">
+        <div class="popup">
+            <h2>Welcome to Simon Says Game!</h2>
+            <p>Instructions:</p>
+            <ol>
+                <li>Simon will show a sequence of colors.</li>
+                <li>Your task is to repeat the sequence by clicking on the colors in the correct order.</li>
+                <li>Each time you successfully repeat the sequence, Simon will add a new color to the pattern.</li>
+                <li>If you make a mistake, the game will end.</li>
+                <li>start play when square blinks!!</li>
+            </ol>
+            <button onclick="startGame() ,myAudio.play()" style="width: 100px;height:30px;border-radius: 7px;box-shadow:5px 5px 10px rgba(0, 0, 0, 0.5);cursor: pointer;">OK</button>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <h1 style="color: green; padding-right:5px;">2024 made with &#10084; by Anurag Pandey </h1>
+        <a href="https://www.linkedin.com/in/anurag-pandey-8a841624b/" target="_blank" style="text-decoration: none; color: #000080;">
+            <i class="fa-brands fa-linkedin fa-bounce"  style="font-size: 24px; margin-right: 5px;"></i>
+        </a>
+        
+        <h1 style="color: #000080; text-shadow: 5px 5px 10px rgba(24, 24, 225, 0.5);">let's play simon say.. </h1>
+    </div>
+    
+    <h2 style="display: flex; justify-content: center;align-items: center;"> start play when square blinks!!</h2>
+    <h3  style="display: flex; justify-content: center;align-items: center; padding-right: 20px;"> Score: 0  </h3>
+    <div style="display: flex; justify-content: center;align-items: center;">
+        <div id="main-box">
+            <div>
+            <div id="sbox" class="1" style="background-color: rgb(39, 91, 215);"></div>
+            <div id="sbox" class="2"  style="background-color: red;"></div></div>
+            <div>
+                <div id="sbox" class="3"  style="background-color: green;"></div>
+                <div id="sbox" class="4" style="background-color: orange;"></div></div>
+           
+        </div>
+     
+    </div>
+    <audio id="myAudio" controls  hidden>
+        <source src="t.mp3" type="audio/mp3">
+
+    </audio>
+    
+    <script src="app.js">
+      
+     </script>
+     <script src="https://kit.fontawesome.com/0fdb49b6d7.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.popup {
+    height: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.game-container {
+    display: none;
+    /* Add game styles as needed */
+}
+
+
+#main-box{
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: solid;
+    border-color: aqua;
+    width: 400px;
+    height: 400px;
+    border-radius: 7px;
+}
+#sbox{
+   
+    border: solid;
+    border-radius: 7px;
+    border-color: aqua;
+    width: 196px;
+    height: 196px;
+    cursor: pointer;
+}
+.butt{
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+}
